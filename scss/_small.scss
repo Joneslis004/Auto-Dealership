@@ -134,6 +134,12 @@ main {
         color: $secondaryColor;
         font-weight: $lightWeight
     }
+    h2 {
+         padding: 1rem $gutter.5rem $gutter;
+        font-size: 1.5rem;
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
     p {
         padding: .5rem $gutter;
         color: #333;

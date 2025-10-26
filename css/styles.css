@@ -418,6 +418,12 @@ main h1 {
   color: #6b7280;
   font-weight: 300;
 }
+main h2 {
+  padding: 1rem 1rem 0.5rem 1rem;
+  font-size: 1.5rem;
+  color: #6b7280;
+  font-weight: 300;
+}
 main p {
   padding: 0.5rem 1rem;
   color: #333;
