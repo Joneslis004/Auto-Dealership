@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330.55 209.95">
+  <path d="M6,165.27c0-87.96,71.31-159.27,159.27-159.27,87.96,0,159.27,71.31,159.27,159.27" fill="#fff" stroke="#231f20" stroke-miterlimit="10" stroke-width="12"/>
+  <circle cx="165.27" cy="185.61" r="20.34" fill="#fff" stroke="#231f20" stroke-miterlimit="10" stroke-width="8"/>
+  <path d="M150.82,174.93c-14.43-5.21-28.44-11.1-42.23-17.72-5.06-2.52-10.88-3.8-15.71-6.84-4.91-3.21-8.68-7.46-12.1-12.42-2.25-3.43-4.32-7.15-5.68-11.98l1.25-1.93c4.96-.75,9.2-.39,13.25.26,7.77,1.42,15.06,3.98,20.7,9.5,5.29,5.56,11.12,10.36,16.9,15.38,8.53,7.7,16.86,15.49,24.86,23.81,0,0-1.25,1.93-1.25,1.93h0Z" fill="#231f20"/>
+  <line x1="165.27" y1="11.07" x2="165.27" y2="45.54" fill="none" stroke="#231f20" stroke-miterlimit="10"/>
+  <line x1="22.95" y1="130.47" x2="56.43" y2="138.72" fill="none" stroke="#231f20" stroke-miterlimit="10"/>
+  <line x1="91.66" y1="34.7" x2="112.28" y2="62.33" fill="none" stroke="#231f20" stroke-miterlimit="10"/>
+  <line x1="44.29" y1="80.58" x2="74.15" y2="97.82" fill="none" stroke="#231f20" stroke-miterlimit="10"/>
+  <line x1="236.65" y1="34.08" x2="217.83" y2="62.96" fill="none" stroke="#231f20" stroke-miterlimit="10"/>
+  <line x1="282.5" y1="72.26" x2="260.76" y2="99.01" fill="none" stroke="#231f20" stroke-miterlimit="10"/>
+  <line x1="305.25" y1="127.86" x2="271.63" y2="144.13" fill="none" stroke="#231f20" stroke-miterlimit="10"/>
+</svg>

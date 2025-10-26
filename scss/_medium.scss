@@ -1,0 +1,23 @@
+/* NAVIGATION STUFF GOES HERE  */
+#theButton {
+    display: none;
+}
+
+#theNav {
+    grid-template-rows: 1fr;
+}
+
+#theNav ul, #theNav ul.open {
+    display: flex;
+    li a {
+        padding: .4rem 1rem;
+        border: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+#navWrapper {
+    border-bottom: 1px solid $greyColor;
+}

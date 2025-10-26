@@ -1,0 +1,256 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*  Apply a natural box layout model to all elements  */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} // end all elements
+
+
+/* --------------------------- BODY --------------------------- */
+body {
+  font-family: $defaultFont;
+  font-weight: $lightWeight;
+  color: $primaryColor;
+  background-color: $lightBackground;
+  min-width: 320px;
+  margin: 0;
+  line-height: $leading;
+}
+
+
+/* --------------------------- HEADER --------------------------- */
+#headerWrapper {
+  border-bottom: 1px solid $greyColor;
+  background-color: #fff;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 50px auto;
+  align-items: center;
+  gap: $gutter;
+  padding: 0.75rem $gutter;
+
+  img {
+    width: 50px;
+    height: auto;
+  }
+
+  span {
+    font-size: 1.8rem;
+    font-weight: $regularWeight;
+    color: $primaryColor;
+    letter-spacing: 0.5px;
+  }
+}
+
+.phone-link {
+  font-family: 'Spline Sans', sans-serif;
+  font-weight: 500;
+  font-size: .9rem;
+  text-decoration: none;
+  color: $secondaryColor; 
+  transition: color 0.3s ease;
+}
+
+.phone-link:hover {
+  color: $primaryColor;
+}
+
+
+
+/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+
+
+#theButton::before {
+    content: "\2630";
+}
+#theButton {
+    border: none;
+    background: none;
+    font-size: 2rem;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+#theNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li a {
+        color: $primaryColor;
+        display: block;
+        padding: .75rem $gutter;
+        text-decoration: none;
+        border-bottom: 1px solid $greyColor;
+    }
+    li.active a {
+        color: $secondaryColor;
+    }
+}
+
+#theButton.open::before {
+    content: "\2715";
+}
+
+#theNav {
+    display:grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+    ul {
+        overflow: hidden;
+    }
+}
+#theNav.open {
+    grid-template-rows: 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------- MAIN --------------------------- */
+main {
+    h1 {
+        padding: 1rem $gutter.5rem $gutter;
+        font-size: 1.5rem;
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    p {
+        padding: .5rem $gutter;
+        color: #333;
+        line-height: $leading;
+    }
+}
+
+.mainHero {
+    border: $primaryColor solid 1px;
+    position: relative;
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    p{
+        position: absolute;
+        margin: 0;
+        background-color: rgba(255,255,255, 0.4);
+        border-radius: 2px;
+        padding: 1rem;
+        top: calc(50% - 25px);
+        width: 80%;
+        right: 0;
+        left: 10%;
+        text-align: center;
+        color: black;
+        font-size: 1rem;
+    }
+}
+
+h1 {
+    background-color: $lightBackground;
+    margin: 0;
+}
+
+div.cards {
+    padding: 0 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+    gap:24px 8px;
+    section {
+        background-color: $lightBackground;
+        border: 1px solid $greyColor;
+        padding: 1.5rem;
+        text-align: center;
+        font-family: $defaultFont;
+        font-weight: $regularWeight;
+        color: $primaryColor;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section img {
+        width: 50px;
+        position: relative;
+    }
+    .shape {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        border: $primaryColor 1px solid;
+        margin: auto;
+        background-color: $accentColor;
+    }
+    .bounce:hover img {animation: myBounce 2s 1;}
+// Bounce Animation
+@keyframes myBounce {
+    0% {bottom:0px; animation-timing-function: ease-out;}
+    25% {bottom:15px; animation-timing-function: ease-in;}
+    50% {bottom:0px; animation-timing-function: ease-out;}
+    75% {bottom:7px; animation-timing-function: ease-in;}
+    100% {bottom:0px; animation-timing-function: ease-out;}
+}
+
+
+}
+
+.reviewWrapper {
+  padding: $gutter / 2; 
+}
+
+
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.quote-card {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.quote-card:hover {
+  transform: translateY(-5px);
+}
+
+
+// end main
+
+
+
+/* --------------------------- FOOTER --------------------------- */
+#footerWrapper {
+    background-color: $primaryColor
+} // end footer wrapper
+
+footer {
+    font-size: .85rem;
+    padding: 1rem $gutter;
+    color: $greyColor;
+    text-align: center;
+    line-height: $leading;
+    a {color: $greyColor;}
+}// end footer
